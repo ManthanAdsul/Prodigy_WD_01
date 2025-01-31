@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITFLOW - Your Perfect Workout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="logo">FITFLOW</div>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-overlay">
+            <h1>Welcome to FITFLOW</h1>
+            <p>Your Perfect Workout, Tailored to You</p>
+            <a href="#services" class="cta-button">Start Now</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p><span>FitFlow is more than just a fitness app—</span></p>
+        <p>It’s your personal fitness coach. Whether you're looking to get stronger, improve flexibility, or stay fit, we’ll create a workout routine that fits your goals.</p>
+        <div class="stats-grid">
+            <div>
+                <h3>50+</h3>
+                <p>Fitness Trainers</p>
+            </div>
+            <div>
+                <h3>20K+</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div>
+                <h3>15+</h3>
+                <p>Years of Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card" onclick="openModal('Personal Training')">
+                <img src="https://images.pexels.com/photos/4853268/pexels-photo-4853268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Personal Training">
+                <h3>Personal Training</h3>
+                <p>Customized workout plans from expert trainers.</p>
+            </div>
+            <div class="service-card" onclick="openModal('Yoga Classes')">
+                <img src="https://images.pexels.com/photos/14461284/pexels-photo-14461284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <h3>Yoga Classes</h3>
+                <p>Improve flexibility and reduce stress.</p>
+            </div>
+            <div class="service-card" onclick="openModal('Nutrition Coaching')">
+                <img src="https://images.pexels.com/photos/5646002/pexels-photo-5646002.jpeg" alt="Nutrition Coaching">
+                <h3>Nutrition Coaching</h3>
+                <p>Personalized diet plans to match your fitness goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 FITFLOW. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" onclick="scrollToTop()">&#8679;</button>
+
+    <!-- Modal -->
+    <div id="service-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="service-title"></h2>
+            <p id="service-description"></p>
+        </div>
+    </div>
+     
+    <script src="script.js"></script>
+</body>
+</html>
